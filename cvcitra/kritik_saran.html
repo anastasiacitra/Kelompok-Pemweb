@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+<style>
+  body {
+    background-color: #ffe6f2; /* Warna latar belakang */
+    color: #880e4f; /* Warna teks */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  h1 {
+    color: #880e4f; /* Warna teks */
+  }
+  form {
+    margin: 20px;
+  }
+  label {
+    color: #880e4f; /* Warna teks */
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #880e4f; /* Warna border */
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #880e4f; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #ff80ab; /* Warna latar belakang tombol saat hover */
+  }
+  a {
+    color: #880e4f; /* Warna teks link */
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <h1>Feedback Form</h1>
+  <form action="#" method="post">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama"><br><br>
+    <label for="npm">NPM:</label><br>
+    <input type="text" id="npm" name="npm"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="kritik">Kritik:</label><br>
+    <textarea id="kritik" name="kritik" rows="4" cols="50"></textarea><br><br>
+    <label for="saran">Saran:</label><br>
+    <textarea id="saran" name="saran" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
